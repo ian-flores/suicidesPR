@@ -36,7 +36,11 @@ suicide_data <- mortality_data %>%
            acme_cause_description = 'ACMEUnderlyingCauseDescription') %>%
     mutate(age = as.numeric(age),
            sex = case_when(sex == 'M' ~ 'Male',
-                           sex == 'F' ~ 'Female'))
+                           sex == 'F' ~ 'Female'),
+           industry = str_conv(industry, 'ISO-8859-1'),
+           education = str_conv(education, 'ISO-8859-1'),
+           occupation = str_conv(occupation, 'ISO-8859-1'))
+
 
 write_csv(suicide_data, 'data/suicide_data.csv')
 
