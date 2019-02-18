@@ -1,0 +1,16 @@
+---
+title: "Suicides in Puerto Rico"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Recently in Puerto Rico, the number of suicide cases has been reported 
+
+Outline:
+
+- Two parts
+    - First: Time series from 2000 to 2008
+    - Second: Analysis of 2017-2019 data

@@ -1,4 +1,3 @@
-## Differences by Sex
 library(tidyverse)
 library(ggridges)
 
